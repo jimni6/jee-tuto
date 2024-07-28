@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+    <display-name>WebApp</display-name>
+    <context-param>
+        <param-name>JDBC_DRIVER</param-name>
+        <param-value>org.postgresql.Driver</param-value>
+    </context-param>
+    <context-param>
+        <param-name>DB_URL</param-name>
+        <param-value>jdbc:postgresql://localhost:5432/jee_tuto</param-value>
+    </context-param>
+    <context-param>
+        <param-name>DB_LOGIN</param-name>
+        <param-value>admin</param-value>
+    </context-param>
+    <context-param>
+        <param-name>DB_PASSWORD</param-name>
+        <param-value>admin</param-value>
+    </context-param>
+    <context-param>
+        <param-name>TEST_JDBC_DRIVER</param-name>
+        <param-value>org.postgresql.Driver</param-value>
+    </context-param>
+    <context-param>
+        <param-name>TEST_DB_URL</param-name>
+        <param-value>jdbc:postgresql://localhost:5432/test_jee_tuto</param-value>
+    </context-param>
+    <context-param>
+        <param-name>TEST_DB_LOGIN</param-name>
+        <param-value>admin</param-value>
+    </context-param>
+    <context-param>
+        <param-name>TEST_DB_PASSWORD</param-name>
+        <param-value>admin</param-value>
+    </context-param>
+
+<!--    <resource-ref>-->
+<!--        <description>PostgreSQL DataSource</description>-->
+<!--        <res-ref-name>jdbc/PostgresDS</res-ref-name>-->
+<!--        <res-type>javax.sql.DataSource</res-type>-->
+<!--        <res-auth>Container</res-auth>-->
+<!--    </resource-ref>-->
+    <welcome-file-list>
+        <welcome-file>login.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>

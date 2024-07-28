@@ -1,0 +1,126 @@
+/* General styling for body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Styling for the h1 heading */
+h1 {
+    font-size: 28px;
+    color: #444;
+    margin-bottom: 20px;
+    font-weight: normal;
+    text-align: center;
+}
+
+/* Styling for the form container */
+form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Styling for form labels */
+form label {
+    margin-bottom: 10px;
+    color: #555;
+    font-weight: bold;
+    display: block;
+    text-align: left;
+}
+
+/* Styling for input fields */
+form input[type="text"] {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: calc(100% - 22px);
+}
+
+/* Styling for the submit button */
+form input[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the submit button */
+form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Styling for error message */
+.errorMessage {
+    background-color: #f8d7da; /* Light red background for error */
+    color: #721c24; /* Dark red text for visibility */
+    /*border: 1px solid #f5c6cb; !* Border to match background *!*/
+    border: none; /* Border to match background */
+    border-radius: 5px; /* Rounded corners */
+    /*padding: 10px 15px; !* Padding for space around the text *!*/
+    padding: 0; /* Padding for space around the text */
+    /*margin: 15px 0; !* Space above and below the message *!*/
+    margin: 0; /* Space above and below the message */
+    font-size: 14px; /* Font size for readability */
+    /*line-height: 1.5; !* Line height for readability *!*/
+    position: relative; /* Positioning for potential icons */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Styling for article details */
+form div {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #555;
+    text-align: left;
+}
+
+/* Highlight for important details like product name and price */
+form div span {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Adding some spacing between elements */
+br {
+    margin-bottom: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    form {
+        padding: 20px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    form input[type="text"], form input[type="submit"], form div {
+        font-size: 14px;
+    }
+    form label {
+        font-size: 14px;
+    }
+    form input[type="submit"] {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
+
